@@ -15,7 +15,7 @@ public class MovieTests {
 		entity.setSynopsis("Synopsis");
 		entity.setYear(2021);
 		entity.setImgUrl("https://imgurl.com/img.png");
-		entity.setGenre(new Genre());
+		entity.setGenre(new GenreService());
 	
 		Assertions.assertNotNull(entity.getId());
 		Assertions.assertNotNull(entity.getTitle());

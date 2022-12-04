@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -27,6 +28,8 @@ public class Movie implements Serializable {
 	private String subTitle;
 	private Integer year;
 	private String imgUrl;
+	
+	@Column(columnDefinition = "TEXT")
 	private String synopsis;
 	
 	@OneToMany(mappedBy = "movie")
@@ -83,6 +86,19 @@ public class Movie implements Serializable {
 	public void setSynopsis(String synopsis) {
 		this.synopsis = synopsis;
 	}
+	
+	public Genre getGenre() {
+		return genre;
+	}
+
+	public void setGenre(Genre genre) {
+		this.genre = genre;
+	}
+
+	public List<Review> getReviews() {
+		return reviews;
+	}
+
 	@Override
 	public int hashCode() {
 		return Objects.hash(id);

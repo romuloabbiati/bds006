@@ -8,7 +8,7 @@ public class GenreTests {
 	@Test
 	public void genreShouldHaveCorrectStructure() {
 	
-		Genre entity = new Genre();
+		GenreService entity = new GenreService();
 		entity.setId(1L);
 		entity.setName("Maria");
 	

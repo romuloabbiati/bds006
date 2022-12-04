@@ -49,6 +49,10 @@ public class Genre implements Serializable {
 		this.name = name;
 	}
 
+	public List<Movie> getMovies() {
+		return movies;
+	}
+
 	@Override
 	public int hashCode() {
 		return Objects.hash(id);
