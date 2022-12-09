@@ -1,4 +1,4 @@
-package com.devsuperior.movieflix.entities;
+package com.smartgroup.movieflix.entities;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -8,7 +8,7 @@ public class GenreTests {
 	@Test
 	public void genreShouldHaveCorrectStructure() {
 	
-		GenreService entity = new GenreService();
+		Genre entity = new Genre();
 		entity.setId(1L);
 		entity.setName("Maria");
 	

@@ -1,4 +1,4 @@
-package com.devsuperior.movieflix.controllers;
+package com.smartgroup.movieflix.controllers;
 
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
@@ -14,7 +14,7 @@ import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.ResultActions;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.devsuperior.movieflix.tests.TokenUtil;
+import com.smartgroup.movieflix.tests.TokenUtil;
 
 @SpringBootTest
 @AutoConfigureMockMvc

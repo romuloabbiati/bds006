@@ -1,4 +1,4 @@
-package com.devsuperior.movieflix.entities;
+package com.smartgroup.movieflix.entities;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -15,7 +15,7 @@ public class MovieTests {
 		entity.setSynopsis("Synopsis");
 		entity.setYear(2021);
 		entity.setImgUrl("https://imgurl.com/img.png");
-		entity.setGenre(new GenreService());
+		entity.setGenre(new Genre());
 	
 		Assertions.assertNotNull(entity.getId());
 		Assertions.assertNotNull(entity.getTitle());
