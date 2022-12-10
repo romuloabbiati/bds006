@@ -2,6 +2,8 @@ package com.smartgroup.movieflix.dto;
 
 import java.io.Serializable;
 
+import javax.validation.constraints.NotBlank;
+
 import com.smartgroup.movieflix.entities.Review;
 
 public class ReviewDTO implements Serializable {
@@ -9,6 +11,8 @@ public class ReviewDTO implements Serializable {
 	private static final long serialVersionUID = 1L;
 	
 	private Long id;
+	
+	@NotBlank(message = "Field cannot be blank")
 	private String text;
 	private Long movieId;
 	private UserDTO user;
