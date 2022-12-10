@@ -31,7 +31,7 @@ public class MovieService {
 	public Page<MovieDTO> findByGenre(Long genreId, Pageable pageable) {
 		Page<Movie> page = null;
 		if(genreId == 0) {
-			page = movieRepository.findAll(pageable);
+			page = movieRepository.findWhenGenreNullOrZero(pageable);
 		} else {
 			page = movieRepository.findByGenre(genreId, pageable);
 			
